@@ -1,0 +1,64 @@
+.main{
+    margin: 50px auto;  
+    width: 300px;
+    height: 500px;
+    border: solid 1px black;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+.scoreboard{
+    height: 125px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 25px;
+
+}
+.scoreboard p{
+    text-align: right;
+    font-size: 4rem;
+    margin: 0;
+}
+.buttons{
+    display: grid;
+    grid-template-areas: 
+    "ac plusMinus percent division"
+    "seven eight nine multiplication"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dote equal";
+    grid-gap: 7px;
+    justify-items: center;
+}
+.button{
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5em;
+    user-select: none;
+    cursor: pointer;
+}
+.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+.button:hover{
+    filter: brightness(150%);
+}
+.button:active{
+    filter: brightness(50%);
+}
+.grey{
+    background: rgb(151, 151, 151);
+}
+.orange{
+    background: orangered;
+}
+
