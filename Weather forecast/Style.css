@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+input{
+    background: transparent;
+    font-family: 'Roboto',
+            sans-serif;
+    color: white;
+    outline: none;
+    border: none;
+    text-shadow: 1px 1px 1px rgb(88, 88, 88), -1px 1px 1px rgb(88, 88, 88), 1px -1px 1px rgb(88, 88, 88), -1px -1px 1px rgb(88, 88, 88);
+}
+#main {
+    background-image: url('img\\background.jpg');
+    border-radius: 10px;
+    height: 230px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 4fr 5fr;
+    font-family:'Roboto',
+        sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(88, 88, 88), -1px 1px 1px rgb(88, 88, 88), 1px -1px 1px rgb(88, 88, 88), -1px -1px 1px rgb(88, 88, 88);
+}
+
+#city {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-weight: bolder;
+    padding-top: 2px;
+    padding-left: 15px;
+    border-bottom: 1px inset;
+    height: 21px;
+}
+#city:hover{
+    cursor: pointer;
+}
+
+#dateTime,
+#currentWeatherFeeling,
+.currentWeather {
+    border-bottom: 1px inset;
+    padding-top: 2px;
+}
+
+#dateTime {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 7px;
+}
+
+#currentWeatherFeeling {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    line-height: 1.3rem;
+    padding-top: 5px;
+}
+
+#clouds {
+    font-weight: bolder;
+}
+
+#time {
+    font-size: xx-large;
+    line-height: 2.5rem;
+    text-align: center
+}
+
+.currentWeather,
+.weatherForecast {
+    text-align: center;
+}
+
+#currentTemperature {
+    font-size: 1.25em;
+}
+
+#currentWeatherFeeling,
+#dateTime {
+    padding-left: 6px;
+}
+
+.weatherForecast {
+    padding-top: 5px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+#cityListForm{
+    background-color: grey;
+    padding: 4px;
+    position: fixed;
+    margin: 0px;
+    z-index: 100;
+    font-family: 'Roboto',
+            sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(88, 88, 88), -1px 1px 1px rgb(88, 88, 88), 1px -1px 1px rgb(88, 88, 88), -1px -1px 1px rgb(88, 88, 88);
+}
+.chooseCity{
+list-style-type: none;
+}
+.chooseCity:hover{
+    cursor: pointer;
+    background-color: rgb(34, 34, 34);
+}
